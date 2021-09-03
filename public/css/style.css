@@ -1,0 +1,9 @@
+/* I looked for a table solution and came across this site:
+https://html-css-js.com/html/tutorial/html-table.php
+Then I used the converter for div tags on the site to generate this css at:
+DivTable.com
+Then I changed the elements to give me these elements */
+thead {
+    background-color: beige;
+    color: navy;
+  }
