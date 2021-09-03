@@ -1,0 +1,67 @@
+<!--* One page includes a table of books. Table MUST have at the following columns (title, author(s), year published, publisher, page count, MSRP) and at four to eight rows of data.
+
+* On the same page as your table of data, include a `<form>`suitable for adding rows to the table. (It doesn't need to *do* anything yet.) Include one input element for each column in the table. Use the appropriate input type. Format the form using an appropriate Bootstrap recipe.-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="books.html">Books</a>
+          <a class="nav-item nav-link" href="#">Stand-Up Comedy</a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar was taken at https://getbootstrap.com/docs/4.0/components/navbar/-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>repl.it</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+      <body>
+        <div class="container">
+      <div class="row">
+        <div class="col-2">
+          Title
+        </div>
+        <div class="col-2">
+          Author(s)
+        </div>
+        <div class="col-2">
+          Year Published
+        </div>
+        <div class="col-2">
+          Publisher
+        </div>
+        <div class="col-2">
+          Page Count
+        </div>
+        <div class="col-2">
+          MSRP
+        </div>
+      </div>
+    </div>
+    <form>
+      <label for="t">Title:</label><br>
+      <input type="text" id="t" name="t"><br>
+      <label for="a">Author(s):</label><br>
+      <input type="text" id="a" name="a"> <br>
+      <label for="yp">Year Published:</label><br>
+      <input type="text" id="yp" name="yp"><br>
+      <label for="p">Publisher:</label><br>
+      <input type="text" id="p" name="p"><br>
+      <label for="pc">Page Count:</label><br>
+      <input type="text" id="pc" name="pc"><br>
+      <label for="m">MSRP:</label><br>
+      <input type="text" id="m" name="m"><br>
+      <!-- inspiration for form: https://www.w3schools.com/html/html_forms.asp-->
+    </form>
+    
+      </body>
+    </html>
