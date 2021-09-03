@@ -7,3 +7,8 @@ thead {
     background-color: beige;
     color: navy;
   }
+  .information
+  {
+      color:red;
+      font-weight: 100;
+  }
