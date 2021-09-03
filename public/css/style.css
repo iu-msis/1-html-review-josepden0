@@ -12,3 +12,10 @@ thead {
       color:red;
       font-weight: 100;
   }
+myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+/* myHeader is from https://www.w3schools.com/htmL/html_id.asp as well as the id tags within each html page */
