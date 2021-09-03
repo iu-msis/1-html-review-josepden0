@@ -24,30 +24,56 @@
         <title>repl.it</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
-      <body>
-        <div class="container">
-      <div class="row">
-        <div class="col-2">
-          Title
-        </div>
-        <div class="col-2">
-          Author(s)
-        </div>
-        <div class="col-2">
-          Year Published
-        </div>
-        <div class="col-2">
-          Publisher
-        </div>
-        <div class="col-2">
-          Page Count
-        </div>
-        <div class="col-2">
-          MSRP
-        </div>
-      </div>
-    </div>
+<body>
+    <h2>Books</h2>
+    <table class="table table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author(s)</th>
+          <th class="text-center">Year Published</th>
+          <th>Publisher</th>
+          <th>Page Count</th>
+          <th>MSRP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Seek Help</td>
+          <td>You</td>
+          <td class="text-center">2021</td>
+          <td>Therapy</td>
+          <td>100</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>Peppermint the Pelican</td>
+          <td>Perry Pumpernickel</td>
+          <td class="text-center">1999</td>
+          <td>Mike Tyson</td>
+          <td>50</td>
+          <td>.01</td>
+        </tr>
+        <tr>
+          <td>LoL: Read Your Enemies Like a Book</td>
+          <td>Any Silver Player</td>
+          <td class="text-center">2009</td>
+          <td>Rito Games</td>
+          <td>1</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Pajama Man Sam</td>
+          <td>Sam Pajama</td>
+          <td class="text-center">2012</td>
+          <td>Pajamarama</td>
+          <td>100</td>
+          <td>150</td>
+        </tr>
+      </tbody>
+      <!-- table inspiration: https://www.w3schools.com/tags/tag_td.asp -->
     <form>
+      <p> Add a book to our list </p>
       <label for="t">Title:</label><br>
       <input type="text" id="t" name="t"><br>
       <label for="a">Author(s):</label><br>
@@ -61,7 +87,6 @@
       <label for="m">MSRP:</label><br>
       <input type="text" id="m" name="m"><br>
       <!-- inspiration for form: https://www.w3schools.com/html/html_forms.asp-->
-    </form>
-    
-      </body>
+    </form>  
+</body>
     </html>
