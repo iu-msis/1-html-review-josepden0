@@ -1,8 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <title>Hello, world!</title>
+
+    <script src="https://unpkg.com/vue@next"></script>
+
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <script src="https://unpkg.com/vue@next"></script>
+      <a class="navbar-brand" href="#">Woohoo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="book.html">Books</a>
+          <a class="nav-item nav-link" href="anime.html">Anime</a>
+        </div>
+      </div>
+    </nav>
+      
+    <div class="container">
+        <div id="testVueApp" class="row align-items-start">   
+            <div class="col col-4">
+              <img :src="BigImage">
+            </div>
+            <div class="col col-8">
+              <p>Name: {{fname}}</p>
+              <p>Country: {{origin}}</p>
+              <p>Age: {{age}}</p>
+              <p>Birthday: {{prettyBirthday}}</p>
+              <!---
+              <p><a v-bind:href="'mailto:' + result.email">{{ result.email }}</a></p>
+              -->
+
+              <form v-on:submit.prevent="fetchUserData">
+                <button type="submit">Refresh</button>
+              </form>
+            </div>
+        </div>
+      </div>
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+    
+    <script src="js/index.js"></script>
+  </body>
+</html>
+
+
+<!--<!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <script src="https://unpkg.com/vue@next"></script>
   <a class="navbar-brand" href="#">Woohoo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -15,7 +80,9 @@
     </div>
   </div>
 </nav>
+-->
 <!--lines 4-17 were taken at https://getbootstrap.com/docs/4.0/components/navbar/-->
+<!--
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
@@ -25,24 +92,37 @@
   <body>
     <div class="container">
   <div class="row">
+    <div id="testVueApp">
     <div class="col-sm">
-      <h2 id="myHeader">Janis Yosef</h2>
-      <p class="information"> Origin: Yugoslavia </p>
-      <p> DOB: 9/2/1999 </p>
-      <p id="para"> Age: 22 </p>
-      <a href = "mailto:yoyoyosef@gmail.com"> yoyoyosef@gmail.com </a>
+
+      <form v-on:submit.prevent="fetchUserData">
+        <button type="submit">Refresh</button>
+      </form>
+      <p>{{ Being.name }}</p>
+      <p>{{ Being.name }}</p>
+      <p>{{ Being.dob.date }}</p>
+      <p>{{ prettyBirthday }}</p>
+      <p><a v-bind:href="'mailto:' + Being.email">{{ Being.email }}</a></p>
+
+
     </div>
     <div class="col-sm">
       My Picture
       <a href="https://www.w3schools.com/html/img_girl.jpg">
         <img src="img/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+      -->
         <!-- code and image taken from https://www.w3schools.com/html/html_images.asp-->
-      </a>
-      
+      <!--</a>
     </div>
   </div>
+  </div>
 </div>
+-->
 <!-- lines 25-34 are from https://getbootstrap.com/docs/4.0/layout/grid/-->
+<!--
     <script src="script.js"></script>
+    <script src="js/index.js"></script>
+
   </body>
 </html>
+-->
