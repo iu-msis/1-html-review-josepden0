@@ -37,13 +37,11 @@
               <img :src="BigImage">
             </div>
             <div class="col col-8">
-              <p>Name: {{fname}}</p>
+              <p>Name: {{fname}} {{lname}}</p>
               <p>Country: {{origin}}</p>
               <p>Age: {{age}}</p>
               <p>Birthday: {{prettyBirthday}}</p>
-              <!---
-              <p><a v-bind:href="'mailto:' + result.email">{{ result.email }}</a></p>
-              -->
+              <p><a v-bind:href="'mailto:' + email">{{ email }}</a></p>
 
               <form v-on:submit.prevent="fetchUserData">
                 <button type="submit">Refresh</button>

@@ -6,7 +6,7 @@ const Counter =
         "Being": 
         {
 
-        },  
+        },  // List of obj
         "BigImage":"",
         "fname":"",
         "lname":"",
@@ -14,7 +14,7 @@ const Counter =
         "age":"",
         "email":"",
         "MedImage": "",
-
+        "birthday":""
         }
     },
     created() //called function to fetch
@@ -26,7 +26,7 @@ const Counter =
     {
         prettyBirthday()
         {
-            return dayjs(this.person.dob.date).format('D MMM YYYY');
+            return dayjs(this.birthday).format('D MMM YYYY');
         }
     },
 
@@ -37,7 +37,7 @@ const Counter =
         fetch('https://randomuser.me/api/')
         .then(response => response.json()) //Get Promise
         
-        .then(responseJSON => 
+        .then(responseJSON => //define objs in data()
             {
             var user = responseJSON.results[0];
             this.fname = user.name.first;
@@ -47,7 +47,7 @@ const Counter =
             this.email = user.email;
             this.BigImage = user.picture.large;
             this.MedImage = user.picture.medium;
-
+            this.birthday = user.dob.date;
             console.log(user);
             })
 
